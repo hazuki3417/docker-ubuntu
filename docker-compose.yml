@@ -5,7 +5,7 @@ services:
     build: #buildしたときのimage名はimageに指定した名前になる
       context: ./
       dockerfile: Dockerfile
-    image: ubuntu18.04:latest
+    image: hazuki3417/ubuntu18.04:latest
     container_name: ubuntu18.04
     environment:
       TZ: Asia/Tokyo

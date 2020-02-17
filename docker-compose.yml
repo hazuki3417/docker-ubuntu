@@ -1,0 +1,16 @@
+version: "3.0"
+
+services:
+  ubuntu18.04_template:
+    build: #buildしたときのimage名はimageに指定した名前になる
+      context: ./
+      dockerfile: Dockerfile
+    image: ubuntu18.04:latest
+    container_name: ubuntu18.04
+    environment:
+      TZ: Asia/Tokyo
+    tty: true
+
+networks:
+  common_link:
+    external: true
